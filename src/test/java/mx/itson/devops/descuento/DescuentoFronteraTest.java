@@ -25,13 +25,15 @@ class DescuentoFronteraTest {
 
     @Test
     void diezPorCientoEnLaFrontera() {
-        fail("TODO(alumno): 100 unidades deben dar 10 %. Sustituye esta linea "
-                + "por assertEquals(esperado, obtenido).");
+        int esperado = 10;
+        int obtenido = descuento.porcentaje(100);
+        assertEquals(esperado, obtenido);
     }
 
     @Test
     void diezPorCientoDespuesDeLaFrontera() {
-        fail("TODO(alumno): 101 unidades deben dar 10 %. Sustituye esta linea "
-                + "por assertEquals(esperado, obtenido).");
+        int esperado = 10;
+        int obtenido = descuento.porcentaje(101);
+        assertEquals(esperado, obtenido);
     }
 }
