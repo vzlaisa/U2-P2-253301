@@ -19,8 +19,11 @@ public class Descuento {
         if (unidades >= 100 && unidades <= 499) {
             return 10;
         }
-        if (unidades >= 500) {
+        if (unidades >= 500 && unidades <= 999) {
             return 15;
+        }
+        if (unidades >= 1000) {
+            return 20;
         }
         return 0;
     }
